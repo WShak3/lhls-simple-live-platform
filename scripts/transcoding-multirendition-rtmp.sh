@@ -22,8 +22,8 @@ STREAM_NAME_720p="720p"
 STREAM_NAME_480p="480p"
 BASE_DIR="../results/${PATH_NAME}"
 LOGS_DIR="../logs"
-GO_BINARY_DIR="~/go/bin"
-eval TS_SEGMENTER_BIN="$GO_BINARY_DIR/go-ts-segmenter"
+GO_MOD_DIR="~/go/pkg/mod"
+eval TS_SEGMENTER_BIN="$GO_MOD_DIR/go-ts-segmenter/go-ts-segmenter"
 
 # Check segmenter binary
 if [ ! -f $TS_SEGMENTER_BIN ]; then
